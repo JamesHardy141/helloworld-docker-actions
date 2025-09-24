@@ -34,4 +34,4 @@ jobs:
         password: ${{ secrets.ACR_PASSWORD }}
 
     - name: Push Docker image
-      run: docker push cs399.azure.io/helloworld:${{ github.sha }}
+      run: docker push cs399.azurecr.io/helloworld:${{ github.sha }}
