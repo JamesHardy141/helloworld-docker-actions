@@ -16,7 +16,7 @@ jobs:
       with:
         dotnet-version: '8.x'
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore HelloWorld/HelloWorldWebServer/HelloWorldWebServer.sln
 
     - name: Build the project
       run: dotnet build --configuration Release --no-restore
