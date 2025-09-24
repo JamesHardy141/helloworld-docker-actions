@@ -5,7 +5,7 @@ on:
   # Automatically trigger it when detected changes in repo
   push:
     branches: 
-      [ main ]
+      [ foo ]
     paths:
     - '**'
     - '.github/workflows/hw399app-AutoDeployTrigger-1827429a-825b-4d28-8708-6d712e639d70.yml'
@@ -45,5 +45,6 @@ jobs:
           imageToBuild: cs399.azurecr.io/hw399app:${{ github.sha }}
           _buildArgumentsKey_: |
             _buildArgumentsValues_
+
 
 
