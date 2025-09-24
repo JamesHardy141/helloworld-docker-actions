@@ -22,7 +22,7 @@ jobs:
       run: dotnet build --configuration Release --no-restore HelloWorld/HelloWorldWebServer/HelloWorldWebServer.sln
 
     - name: Publish the project
-      run: dotnet publish -c Release
+      run: dotnet publish -c Release HelloWorld/HelloWorldWebServer/HelloWorldWebServer.sln
 
     - name: Build Docker image
       run: docker build -t cs399.azurecr.io/helloworld:${{ github.sha}} .
