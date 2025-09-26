@@ -14,6 +14,7 @@ class Program
 
     static void Main(String[] args)
     {
+        Console.WriteLine("Hello called");
         WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
         WebApplication app = builder.Build();
 
