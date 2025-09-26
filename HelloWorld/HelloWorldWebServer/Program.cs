@@ -9,7 +9,7 @@ class Program
     private static async Task GoodbyeWorldDelegate(HttpContext context)
     {
         await context.Response.WriteAsync("Goodbye World!");
-        Logger.LogInformation("Goodbye called");
+        Console.WriteLine("Goodbye called");
     }
 
     static void Main(String[] args)
